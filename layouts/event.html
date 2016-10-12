@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="bg">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{title}} @ VarnaLab</title>
+    <meta name="description" content="{{description}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body class="vl-rows">
+    <header class="vl-page-header">
+      <h1 class="vl-logo"><a href='/'>[ VarnaLab ]</a></h1>
+      <a href='/events'>Events</a>
+    </header>
+    {{{contents}}}
+    <div class="lesson-nav">
+      {{#if previous}}
+        <a class="prev" href="/{{{previous.path}}}">&larr; {{{previous.title}}}</a>
+      {{/if}}
+      {{#if next}}
+        <a class="next right" href="/{{{next.path}}}">{{{next.title}}} &rarr;</a>
+      {{/if}}
+    </div>
+
+    <footer class="vl-page-footer">
+    </footer>
+  </body>
+</html>

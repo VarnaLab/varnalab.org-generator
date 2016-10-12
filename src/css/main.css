@@ -1,0 +1,115 @@
+html {
+  font-size: 10px;
+  line-height: 1.2;
+  height: 100vh;
+  background-image: url('images/ecailles.png');
+}
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  background-image:
+  linear-gradient(
+      to right,
+      #83e777 0%,
+      #83e777 25%,
+      #ebed1e 25%,
+      #ebed1e 50%,
+      #4cb1e7 50%,
+      #4cb1e7 75%,
+      #9f1110 75%,
+      #9f1110 100%);
+  background-size: 50% 1rem;
+  background-repeat: repeat-x;
+}
+.vl-rows {
+    display: flex;
+    flex-direction: column;
+}
+.vl-columns {
+    display: flex;
+    flex-direction: row;
+}
+.vl-page-content {
+  margin-top: 1rem;
+  background-image: url('images/content-inner.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+.vl-page-footer {
+  margin-top: auto;
+  color: #fff;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: .1em;
+  margin-bottom: .3em;
+}
+h1 {
+  font-size: 2.8rem;
+}
+h2 {
+  font-size: 2.6rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2.2rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.8rem;
+}
+blockquote {
+  position: relative;
+  padding: 2rem 3rem;
+  margin: 2rem;
+  background-color: #fefefe;
+}
+blockquote:before,
+blockquote:after {
+  position: absolute;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #ccc;
+}
+blockquote:before {
+  content: '„';
+  bottom: 1rem;
+  left: 0;
+}
+blockquote:after {
+  content: '“';
+  top: 1rem;
+  right: 0;
+}
+.vl-ul-listing {
+  list-style-type: disc;
+}
+.vl-ol-listing {
+  list-style-type: decimal;
+}
+.vl-ol-listing li,
+.vl-ul-listing li {
+  margin-left: 2em;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+.vl-hackermaps {
+  position: relative;
+  overflow: hidden;
+}
+.vl-hackermaps a:last-child {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 30%;
+  box-shadow: 0 0 5px #000;
+  filter: saturate(10%);
+}
+.vl-hackermaps a:hover {
+  filter: saturate(100%);
+}
